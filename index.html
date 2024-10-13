@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column; /* Stack heading and paragraph */
+            align-items: flex-start; /* Align items to the start */
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column; /* Stack main items vertically */
+                align-items: flex-start; /* Align items to the start */
+            }
+
+            .img {
+                margin: 10px 0; /* Optional spacing */
+                order: 2; /* Image comes second */
+            }
+
+            p {
+                order: 1; /* Paragraph comes first */
+            }
+
+            button {
+                order: 3; /* Button comes last */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="intro">
+        <h1>Welcome to my portfolio</h1> 
+        <p>This is a simple website created using HTML, CSS, and JavaScript. It includes a navigation bar with dropdown menus, a responsive layout, and a simple form with validation.</p>
+    </div>
+
+    <div class="img">
+        <img src="public/soh.png" alt="">
+    </div>
+
+    <button>Download CV</button> 
+</main>
+
+</body>
+</html>

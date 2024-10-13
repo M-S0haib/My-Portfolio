@@ -3,25 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #13ADC7; /* Replace with your desired color */
+  --color-secondary: #6978D1;
+  --color-end: #945DD6; /* Replace with your desired color */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.wrapper {
+    @apply px-10   lg:px-8 max-w-screen-xl mx-auto;
+    }
+
+/* .wrapper2{
+  @apply max-w-screen-md mx-auto px-8;
+
+
+} */
+      .gradient-text {
+        background: linear-gradient(270deg, #31CBE5 0%, #8796EF 66.67%, #B27BF4 100%);
+        background-clip: text;
+        -webkit-background-clip: text; /* For Safari */
+        -webkit-text-fill-color: transparent;
+      }
+      
+.gradient{
+   background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient:hover{
+  background: linear-gradient(270deg, #31CBE5 0%, #8796EF 66.67%, #B27BF4 100%);
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
