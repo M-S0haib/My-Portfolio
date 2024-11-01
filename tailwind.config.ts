@@ -8,11 +8,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    
     extend: {
-		backgroundImage: {
-			'gradient-primary': 'linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-end)',
-		  },
-      colors: {
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-end))',
+      },
+        colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         cyan: '#31CBE5',

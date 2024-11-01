@@ -11,10 +11,10 @@ import {
 function Header() {
   return (
     <header className=" flex justify-between wrapper py-9 items-end">
-      <h1 className="text-white text-3xl">M.S. portfolio</h1>
+      <h1 className="text-white text-2xl md:text-3xl">M.S. portfolio</h1>
 
       <nav>
-        <ul className=" hidden   sm:flex justify-between items-center gap-x-16 text-slate-300 text-base">
+        <ul className=" hidden   md:flex justify-between items-center gap-x-16 text-slate-300 text-base">
           <li className="hover:border-b-2 hover:border-blue-500 hover:text-white">
             <a href="">Projects</a>
           </li>
@@ -27,10 +27,10 @@ function Header() {
         </ul>
 
         <Sheet>
-          <SheetTrigger className="text-white sm:hidden">
-            <AlignJustify size={28} />
+          <SheetTrigger className="text-white md:hidden">
+            <AlignJustify size={25} />
           </SheetTrigger>
-          <SheetContent className="text-white sm:hidden">
+          <SheetContent className="text-white md:hidden">
             <ul>
               <li>
                 <a href="">Projects</a>
@@ -47,9 +47,7 @@ function Header() {
       </nav>
 
       <div className="icons flex gap-x-4  ">
-        <div className=" p-2 rounded-full inline-flex items-center justify-center text-white">
-          <Linkedin className="text-transparent bg-clip-text" />
-        </div>
+          <Linkedin className="hover:textgradient hover:text-red hover:from-cyan hover:to-blue hover:via-purple  text-white" />
 
         <Twitter className="hover:textgradient hover:text-red hover:from-cyan hover:to-blue hover:via-purple  text-white" />
       </div>
