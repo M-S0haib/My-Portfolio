@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-    @apply px-6 max-w-screen-xl mx-auto;
+    @apply px-6 max-w-screen-xl mx-auto md:px-8;
     }
 
       .gradient-text {
@@ -67,3 +67,4 @@
 
 .progressIndicater {box-shadow: 0px 3.02px 12.94px 0px ;
 }
+

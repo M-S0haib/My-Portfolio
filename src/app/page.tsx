@@ -2,6 +2,9 @@ import Image from "next/image";
 import Header from "./myComponents/header";
 import Projects from "./myComponents/project";
 import { Progress } from "@/components/ui/progress"
+
+import Component  from "./myComponents/timeLinemd";
+import Timeline from "./myComponents/timeline";
 export default function Home() {
   return (
     <>
@@ -112,6 +115,11 @@ export default function Home() {
         <li className="li-skills text-white text-[14px] md:text-2xl  font-medium">Problem Solving</li>
       </ul>
 
+    </div>
+
+    <div className="timeline wrapper mt-32">
+    <Component />
+    <Timeline/>
     </div>
 
     </>
