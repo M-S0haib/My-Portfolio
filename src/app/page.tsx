@@ -3,8 +3,8 @@ import Header from "./myComponents/header";
 import Projects from "./myComponents/project";
 import { Progress } from "@/components/ui/progress"
 
-import Component  from "./myComponents/timeLinemd";
-import Timeline from "./myComponents/timeline";
+import HorizontalTimeline  from "./myComponents/HorizontalTimeLine";
+import VerticalTimeline from "./myComponents/verticalTimeline";
 export default function Home() {
   return (
     <>
@@ -118,8 +118,8 @@ export default function Home() {
     </div>
 
     <div className="timeline wrapper mt-32">
-    <Component />
-    <Timeline/>
+    <HorizontalTimeline />
+    <VerticalTimeline/>
     </div>
 
     </>

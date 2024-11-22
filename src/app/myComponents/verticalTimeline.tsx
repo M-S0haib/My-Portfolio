@@ -1,4 +1,4 @@
-export default function Timeline() {
+export default function VerticalTimeline() {
     const timelineEvents = [
       {
         year: "2011",

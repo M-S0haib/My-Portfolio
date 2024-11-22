@@ -1,4 +1,4 @@
-export default function Component() {
+export default function HorizontalTimeline() {
     const timelineEvents = [
       {
         year: "2011",
